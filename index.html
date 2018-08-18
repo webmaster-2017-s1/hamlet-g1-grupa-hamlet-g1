@@ -27,8 +27,8 @@
 </head>
 
 <!-- navbar - menu nawigacyjne -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="index.html">Witamy</a>
+<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+  <a class="navbar-brand wygląd" href="index.html">Witamy</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -36,11 +36,11 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link dropdown-toggle wygląd" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Uczeń
         </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Interpretacja</a>
+        <div class="dropdown-menu wygląd" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item wygląd" href="#">Interpretacja</a>
           <a class="dropdown-item" href="#">Wiadomości</a>
           <a class="dropdown-item" href="#">Ćwiczenia</a>
           <a class="dropdown-item" href="#">Porady</a>
@@ -49,7 +49,7 @@
         </div>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link dropdown-toggle wygląd" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Nauczyciel
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -58,7 +58,7 @@
         </div>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link dropdown-toggle wygląd" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           (Kon)teksty
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -79,7 +79,7 @@
         </div>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link dropdown-toggle wygląd" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Varia
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -101,13 +101,45 @@
 </nav>
 
 <!-- jumbotron -->
-<div class="jumbotron">
+<div class="jumbotron styl">
   <h1 class="display-4">Hamlet</h1>
   <cite title="Source Title">Czego dowiesz się sam, tego się nauczysz!</cite>
 </div>
 
 
 <body>
+
+  <div class="aktualności">
+      <h1>Serwis Humanistyczny Hamlet</h1>
+      <h2>Koniec roku</h2>
+      <h3>13.12.2015</h3>
+      <p class="tekst">... się zbliża, a w naszym serwisie pewien zastój. Niestety, czasu jakby mniej. Niemniej (:-)), o ile Nowy Rok będzie łaskawy, postaramy się to i owo aktualizować, a od czasu do czasu dorzucić coś nowego.</p>
+
+      <a href="szablon.html" data-toggle="tooltip"data-placement="top" title="przejdz do Nowości 2013">Nowości 2013-></a>
+      <a href="szablon.html" data-toggle="tooltip"data-placement="top" title="przejdz do Nowości 2012">Nowości 2012-></a>
+
+  </div>
+
+  <div class="menu2">
+    <h2 class="SHH">Serwis Humanistyczny Hamlet</h2>
+    <h2>Linki</h2>
+      <ol class="list-inline-item">
+          <ul>
+            <li><a href="http://hamlet.edu.pl/testy3/">Testy</a></li>
+            <li><a href="http://ecg.vot.pl/">eCG</a></li>
+            <li><a href="https://wolnelektury.pl/">Wolne lektury</a></li>
+            <li><a href="http://www.olijp.pl/">Olimpiada JP</a></li>
+            <li><a href="https://cke.gov.pl/">CKE</a></li>
+          </ul>
+      </ol>
+    <h2>Kontakt</h2>
+    <ol class="list-inline-item">
+        <ul>
+          <li><a href="https://accounts.google.com/AccountChooser/signinchooser?service=mail&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&flowName=GlifWebSignIn&flowEntry=AccountChooser">Hamlet</a></li>
+        </ul>
+    </ol>
+  </div>
+
 
   <!-- brak java scriptu -->
   <noscript>
@@ -129,13 +161,13 @@
   </script>
 
   <!-- Nagłówek strony: menu, logo, breadcrumbs itp. -->
-  <div class="container">
+  <!-- <div class="container">
     <i class="fas fa-check-circle"></i>
     Klasa .container użyta została przykładowo, jeżeli Twój projekt wymaga .container-fluid
     lub w ogóle rezygnuje z kontenerów, zmień ją.<br>
     <i class="fas fa-check-circle"></i>
     Nie muszisz trzymać się sztywnego podziału na trzy sekcje szablonu (nagłowek, treść, stopka).
-  </div>
+  </div> -->
 
   <!-- Treść główna -->
   <div class="container">
@@ -144,6 +176,9 @@
 
   <!-- Stopka strony: copyrights, dodatkowe linki itp. -->
   <div class="container">
+
+    <p class="publikacja">Opublikowano 09.10.2012 r.</p>
+    <p class="cSHH">· 2018 © <a href="index.html">Serwis Humanistyczny Hamlet ·</a></p>
 
   </div>
 
